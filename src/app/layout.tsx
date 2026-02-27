@@ -46,6 +46,18 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "DistroAgents",
+  url: "https://distroagents.com",
+  logo: "https://distroagents.com/logo.png",
+  description:
+    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and compliance.",
+  email: "hello@distroagents.com",
+  sameAs: [],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -55,6 +67,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body className={`${inter.variable} antialiased`}>
         <Navbar />

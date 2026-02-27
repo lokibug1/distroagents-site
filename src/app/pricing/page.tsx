@@ -39,9 +39,23 @@ const faq = [
   { q: "What integrations are included?", a: "All plans include standard integrations with major ERPs (SAP, Oracle, NetSuite, Epicor), email systems, and common distribution tools. Custom integrations are available on Enterprise plans." },
 ];
 
+const pricingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
 export default function PricingPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingFaqSchema) }}
+      />
       {/* Hero */}
       <section className="relative pt-36 pb-20 overflow-hidden bg-hero">
         <div className="absolute inset-0 pointer-events-none">
