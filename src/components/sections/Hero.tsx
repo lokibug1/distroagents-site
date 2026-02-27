@@ -31,8 +31,8 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-[clamp(36px,6vw,76px)] font-bold text-white leading-[1.05] tracking-tight mb-6">
-            Your Distribution Business,{" "}
-            <span className="text-gradient">Running on Autopilot</span>
+            Your Distribution Business{" "}
+            <span className="text-gradient">on Autopilot</span>
           </h1>
 
           {/* Subheadline */}
