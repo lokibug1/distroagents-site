@@ -37,9 +37,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="DistroAgents"
-                width={150}
-                height={38}
-                className="h-7 w-auto"
+                width={160}
+                height={25}
+                className="h-6 w-auto"
               />
             </Link>
             <p className="text-[14px] text-slate-500 leading-relaxed max-w-xs mb-6">

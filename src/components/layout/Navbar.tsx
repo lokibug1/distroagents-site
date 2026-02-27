@@ -41,9 +41,9 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="DistroAgents"
-              width={160}
-              height={40}
-              className="h-8 w-auto"
+              width={180}
+              height={28}
+              className="h-7 w-auto"
               priority
             />
           </Link>
