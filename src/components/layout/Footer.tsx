@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/lib/constants";
 
 const footerLinks = {
@@ -33,10 +34,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2">
             <Link href="/" className="inline-flex items-center mb-5">
-              <span className="text-[20px] font-bold tracking-tight">
-                <span className="text-white">Distro</span>
-                <span className="text-blue-400">Agents</span>
-              </span>
+              <Image
+                src="/logo.png"
+                alt="DistroAgents"
+                width={150}
+                height={38}
+                className="h-7 w-auto"
+              />
             </Link>
             <p className="text-[14px] text-slate-500 leading-relaxed max-w-xs mb-6">
               Purpose-built AI agents for wholesale distribution. Recover revenue, reduce costs, and

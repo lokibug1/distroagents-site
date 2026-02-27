@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { navLinks } from "@/lib/constants";
 import Button from "@/components/ui/Button";
@@ -37,10 +38,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className="text-[22px] font-bold tracking-tight">
-              <span className="text-white">Distro</span>
-              <span className="text-blue-400">Agents</span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="DistroAgents"
+              width={160}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
