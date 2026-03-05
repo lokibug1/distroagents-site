@@ -11,6 +11,7 @@ const footerLinks = {
     { label: "Customer Service", href: "/use-cases/customer-service" },
     { label: "Finance", href: "/use-cases/finance-ar" },
     { label: "Compliance", href: "/use-cases/compliance" },
+    { label: "Procurement", href: "/use-cases/procurement" },
   ],
   Company: [
     { label: "About", href: "/about" },
