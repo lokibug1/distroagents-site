@@ -66,15 +66,15 @@ export const useCaseCategories = [
     title: "Sales",
     shortTitle: "Sales",
     description:
-      "Turn your sales team into a revenue machine by automating prospecting, quoting, and follow-up.",
+      "Turn your inside sales team into a revenue machine. Automate quoting, capture institutional knowledge before it walks out the door, and stop losing deals to slow response times.",
     tagline: "Turn Your Sales Team into a Revenue Machine",
     agentCount: 6,
     color: "blue",
     icon: "chart-bar",
     keyOutcomes: [
-      "3-5x increase in outbound touches",
-      "80% faster quoting",
-      "15-25% dormant account reactivation",
+      "Quote turnaround: 4 hours to 4 minutes",
+      "New rep ramp: 6 months to 6 weeks",
+      "50+ quotes per rep per day",
     ],
     agents: [
       {
@@ -213,28 +213,28 @@ export const useCaseCategories = [
     ],
     challenge: [
       {
-        problem: "Sales reps spend 60%+ of time on admin tasks",
-        impact: "Less time in front of customers",
+        problem: "Quoting takes 3-4 hours per day per rep",
+        impact: "Pricing lookups, stock checks, substitutions, formatting — customers wait, deals go cold",
       },
       {
-        problem: "Manual prospecting is slow and inconsistent",
-        impact: "Pipeline gaps, missed opportunities",
+        problem: "Knowledge lives in people's heads",
+        impact: "Senior reps know pricing tiers, vendor lead times, part interchangeability — none is written down",
       },
       {
-        problem: "Quote turnaround takes hours or days",
-        impact: "Lost deals to faster competitors",
+        problem: "New reps take 6-12 months to ramp",
+        impact: "No system — they learn by shadowing and making mistakes on live orders",
       },
       {
-        problem: "No systematic follow-up on leads",
-        impact: "Leads go cold, money left on table",
+        problem: "No systematic follow-up on open quotes",
+        impact: "Leads go cold, stale opportunities die, money left on table",
       },
       {
         problem: "Dormant accounts forgotten",
         impact: "Existing customers defect to competitors",
       },
       {
-        problem: "Inconsistent messaging across reps",
-        impact: "Brand dilution, pricing confusion",
+        problem: "Everyone's using AI wrong",
+        impact: "Personal ChatGPT accounts with no shared context, company data, or consistency",
       },
     ],
     integrations: {
@@ -256,19 +256,23 @@ export const useCaseCategories = [
     faq: [
       {
         q: "Will this replace my sales reps?",
-        a: "No. These agents handle the tasks that prevent your reps from selling. Your reps become more productive, not redundant.",
+        a: "No. These agents handle the tasks that prevent your reps from selling — pricing lookups, stock checks, formatting quotes, chasing follow-ups. Your reps become 2-3x more productive.",
       },
       {
-        q: "Can I control what the agents say?",
-        a: "Yes. You approve messaging templates and set guardrails. The agent personalizes within your approved framework.",
+        q: "What happens when a senior rep leaves?",
+        a: "Their knowledge stays. Every piece of institutional knowledge — pricing shortcuts, customer preferences, substitution rules — is captured in the system and available to every rep.",
       },
       {
-        q: "What if a lead wants to talk to a human?",
-        a: "Agents are trained to recognize this and hand off immediately. Human escalation is always available.",
+        q: "My team isn't technical.",
+        a: "That's the point. They talk to it like they'd talk to a coworker: 'What's the lead time on 3/4-inch EMT from Southwire?' No training manual required.",
       },
       {
         q: "How does it handle complex quotes?",
-        a: "Configurable complexity thresholds. Simple quotes auto-generate; complex quotes get flagged for rep review.",
+        a: "Configurable complexity thresholds. Simple quotes auto-generate with correct pricing tiers, inventory checks, and substitutions. Complex quotes get flagged for rep review with full context.",
+      },
+      {
+        q: "We already use an ERP/CRM.",
+        a: "We don't replace your systems — we sit on top of them. Your reps keep working where they already work. The AI handles the busywork between the tools.",
       },
     ],
   },
@@ -277,14 +281,14 @@ export const useCaseCategories = [
     title: "Order Management",
     shortTitle: "Orders",
     description:
-      "Capture orders from any channel, validate automatically, and keep customers informed.",
+      "Automate the entire order-to-acknowledgment cycle — from PO intake and SKU matching to pricing validation, availability checks, and ERP entry. No re-keying. No pricing errors.",
     tagline: "Every Order, Handled Perfectly",
     agentCount: 6,
     color: "green",
     icon: "clipboard-list",
     keyOutcomes: [
-      "70% order automation",
-      "35% reduction in errors",
+      "85% orders processed without human touch",
+      "Error rate from 6% to under 1%",
       "24/7 order capture",
     ],
     agents: [
@@ -424,10 +428,10 @@ export const useCaseCategories = [
     ],
     challenge: [
       { problem: "Orders arrive via phone, text, email, fax, portal", impact: "Manual re-entry, errors, delays" },
-      { problem: "Staff tied up on phones taking orders", impact: "Can't handle volume spikes, overtime costs" },
-      { problem: "Order errors cause credits and returns", impact: "Margin erosion, customer frustration" },
-      { problem: "Customers can't get quick order status", impact: "High call volume, poor experience" },
-      { problem: "Reorders depend on customer memory", impact: "Missed sales, inconsistent ordering" },
+      { problem: "Customers use their own part numbers, not yours", impact: "Half of order desk time spent on SKU lookups" },
+      { problem: "Pricing validation is manual and error-prone", impact: "Wrong prices shipped, caught at month-end or worse" },
+      { problem: "Order errors cause credits and returns", impact: "Each error costs $50-$200 in re-work and re-ships" },
+      { problem: "Headcount scales linearly with volume", impact: "Revenue grows but operating margin stays flat" },
       { problem: "After-hours orders wait until morning", impact: "Lost business to 24/7 competitors" },
     ],
     integrations: {
@@ -439,17 +443,19 @@ export const useCaseCategories = [
     recommendedWhy: "Immediate labor savings on highest-volume channel or quick win reducing inbound calls.",
     deploymentTime: "2-4 weeks",
     roi: [
-      { metric: "Orders requiring manual entry", before: "100%", after: "30%", impact: "70% automation" },
-      { metric: "Order desk FTEs needed", before: "5", after: "2", impact: "$150K+ savings" },
-      { metric: "Order errors", before: "3%", after: "0.5%", impact: "83% reduction" },
-      { metric: "After-hours orders captured", before: "0%", after: "100%", impact: "New revenue" },
-      { metric: "Order status calls per day", before: "50", after: "10", impact: "80% reduction" },
+      { metric: "Orders requiring human touch", before: "100%", after: "15%", impact: "85% automation" },
+      { metric: "Order processing time", before: "15-20 min/order", after: "Under 2 min", impact: "90% faster" },
+      { metric: "Order error rate", before: "5-8%", after: "Under 1%", impact: "85% reduction" },
+      { metric: "Order desk headcount needed", before: "1 per 50-80/day", after: "1 for 200+/day", impact: "$140K-$350K savings" },
+      { metric: "Order acknowledgment time", before: "Hours or next-day", after: "Under 5 minutes", impact: "Customer experience" },
     ],
     faq: [
-      { q: "Can the voice agent handle complex orders?", a: "Yes, for most orders. For highly complex situations, it seamlessly transfers to a human." },
-      { q: "What about customers who don't want to talk to an AI?", a: "They can always press 0 to reach a human. Most customers prefer the speed once they try it." },
-      { q: "How does it handle accents?", a: "Our voice recognition is trained on diverse accents and handles background noise. Accuracy exceeds 95%." },
-      { q: "What if inventory changes between order and fulfillment?", a: "The Validation Agent checks real-time inventory. The Status Agent proactively notifies with substitution options." },
+      { q: "Does this work with our ERP?", a: "We integrate with Sage 100/300/X3, NetSuite, SAP Business One, Epicor Prophet 21/Eclipse, Distribution One, and 15+ other distribution ERPs." },
+      { q: "Our customers use their own part numbers. Can it handle that?", a: "That's specifically what this is built for. The system maps customer part numbers, aliases, UPCs, and manufacturer numbers to your internal SKUs. New aliases are flagged once and learned permanently." },
+      { q: "Our pricing is complicated — contracts, volume tiers, promos. Can it validate all that?", a: "Yes. Every line gets checked against your full pricing structure. Discrepancies get flagged with full context — e.g., 'Line 3: PO says $14.20, contract price is $14.80' — and routed to the right person." },
+      { q: "Can the voice agent handle complex orders?", a: "Yes, for most orders. For highly complex situations, it seamlessly transfers to a human with full context." },
+      { q: "Can we start with just order processing and add more later?", a: "That's what most distributors do. Start with the highest-volume workflow, see results, then expand to inventory monitoring, vendor communication, or AP automation." },
+      { q: "Will this replace my order desk team?", a: "It replaces the mechanical work — not the people. Most distributors reallocate their best people to customer service, account management, and inside sales." },
     ],
   },
   {

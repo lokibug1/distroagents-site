@@ -19,6 +19,10 @@ const footerLinks = {
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ],
+  Solutions: [
+    { label: "Order Processing", href: "/solutions/order-processing" },
+    { label: "Inside Sales AI", href: "/solutions/inside-sales" },
+  ],
   Resources: [
     { label: "All Agents", href: "/use-cases" },
     { label: "Book a Demo", href: "/book-demo" },
@@ -31,7 +35,7 @@ export default function Footer() {
     <footer className="relative border-t border-white/[0.04]">
       <div className="absolute inset-0 bg-gradient-to-t from-navy-950 to-transparent pointer-events-none" />
       <div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-16 pb-12">
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 lg:gap-16">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-10 lg:gap-16">
           {/* Brand */}
           <div className="col-span-2">
             <Link href="/" className="inline-flex items-center mb-5">

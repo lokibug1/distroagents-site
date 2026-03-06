@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/book-demo`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
     { url: `${baseUrl}/custom-agents`, lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.7 },
     { url: `${baseUrl}/blog`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.7 },
+    { url: `${baseUrl}/solutions/order-processing`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.9 },
+    { url: `${baseUrl}/solutions/inside-sales`, lastModified: new Date(), changeFrequency: "weekly" as const, priority: 0.9 },
   ];
 
   const useCasePages = useCaseCategories.map((cat) => ({
