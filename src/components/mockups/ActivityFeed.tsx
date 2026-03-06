@@ -4,7 +4,7 @@ const agentColors: Record<string, string> = {
   Collections: "text-orange-400",
   "Voice Order": "text-blue-400",
   "Margin Protection": "text-purple-400",
-  Compliance: "text-cyan-400",
+  Procurement: "text-amber-400",
 };
 
 export default function ActivityFeed() {

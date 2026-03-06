@@ -17,7 +17,7 @@ const websiteSchema = {
   name: "DistroAgents",
   url: "https://distroagents.com",
   description:
-    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and compliance.",
+    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and procurement.",
 };
 
 const faqSchema = {

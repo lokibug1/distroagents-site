@@ -61,8 +61,8 @@ export default function Hero() {
         {/* Stats row */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px rounded-2xl overflow-hidden glass max-w-3xl mx-auto">
           {[
-            { value: "46+", label: "Specialized Agents" },
-            { value: "8", label: "Business Functions" },
+            { value: "41+", label: "Specialized Agents" },
+            { value: "7", label: "Business Functions" },
             { value: "50+", label: "Distributors Served" },
             { value: "2-5%", label: "Margin Recovery" },
           ].map((stat, i) => (

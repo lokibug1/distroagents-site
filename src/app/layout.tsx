@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s | DistroAgents",
   },
   description:
-    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and compliance. Recover revenue and reduce costs with distribution-native AI.",
+    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and procurement. Recover revenue and reduce costs with distribution-native AI.",
   keywords: [
     "wholesale distribution AI",
     "distribution automation",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "DistroAgents",
     title: "DistroAgents | AI Agents for Wholesale Distribution",
     description:
-      "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and compliance.",
+      "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and procurement.",
   },
   twitter: {
     card: "summary_large_image",
@@ -53,7 +53,7 @@ const organizationSchema = {
   url: "https://distroagents.com",
   logo: "https://distroagents.com/logo.png",
   description:
-    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and compliance.",
+    "Purpose-built AI agents for wholesale distributors. Automate sales, orders, collections, pricing, and procurement.",
   email: "hello@distroagents.com",
   sameAs: [],
 };

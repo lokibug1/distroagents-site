@@ -61,7 +61,7 @@ export function ConfigureMockup() {
     { name: "Collections", on: true },
     { name: "Voice Orders", on: true },
     { name: "Margin Guard", on: false },
-    { name: "Compliance", on: true },
+    { name: "Procurement", on: true },
   ];
 
   return (

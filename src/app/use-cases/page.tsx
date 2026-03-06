@@ -5,9 +5,9 @@ import Button from "@/components/ui/Button";
 import { useCaseCategories, colorMap } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Use Cases | 40+ AI Agents for Wholesale Distribution",
+  title: "Use Cases | 41+ AI Agents for Wholesale Distribution",
   description:
-    "Explore 40+ purpose-built AI agents across 7 categories: Sales, Orders, Pricing, Operations, Customer Service, Finance, and Compliance.",
+    "Explore 41+ purpose-built AI agents across 7 categories: Sales, Orders, Pricing, Operations, Customer Service, Finance, and Procurement.",
 };
 
 export default function UseCasesIndex() {
@@ -26,7 +26,7 @@ export default function UseCasesIndex() {
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/[0.04] border border-white/[0.06] mb-8 backdrop-blur-sm">
-            <span className="text-[13px] text-slate-300">7 Categories &middot; 40+ Agents</span>
+            <span className="text-[13px] text-slate-300">7 Categories &middot; 41+ Agents</span>
           </div>
           <h1 className="text-[clamp(32px,5vw,60px)] font-bold text-white leading-[1.08] tracking-tight mb-6">
             AI Agents Purpose-Built for{" "}
@@ -129,7 +129,6 @@ export default function UseCasesIndex() {
                   { label: "Immediate Cash", color: "#4ade80", agents: "Collections Agent + Invoice Reconciliation Agent" },
                   { label: "Labor Savings", color: "#60a5fa", agents: "Voice Order Agent + Order Status Agent" },
                   { label: "Margin Protection", color: "#c084fc", agents: "Margin Protection Agent + Dynamic Pricing Agent" },
-                  { label: "Compliance", color: "#f87171", agents: "Traceability Agent (FSMA 204)" },
                 ].map((item) => (
                   <li key={item.label} className="flex items-start gap-3">
                     <span

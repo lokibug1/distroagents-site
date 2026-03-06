@@ -23,7 +23,7 @@ export const agents: Agent[] = [
   { name: "Collections Agent", status: "active", metric: "12 calls today", trend: "+23%" },
   { name: "Voice Order Agent", status: "processing", metric: "Handling call", trend: null },
   { name: "Margin Protection", status: "active", metric: "3 alerts caught", trend: "-47% errors" },
-  { name: "Compliance Monitor", status: "idle", metric: "All clear", trend: null },
+  { name: "Procurement Agent", status: "idle", metric: "3 POs pending", trend: null },
 ];
 
 export const activities: Activity[] = [
